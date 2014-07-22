@@ -1,0 +1,9 @@
+﻿@using DependentBundles.Core
+@model string
+@{
+    ViewBag.Title = "InView";
+}
+<h1>Editor For Tests</h1>
+@Html.Partial("_BackToTests")
+@Html.EditorFor(x=>x)
+

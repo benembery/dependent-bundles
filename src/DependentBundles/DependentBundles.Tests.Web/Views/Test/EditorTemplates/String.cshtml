@@ -1,0 +1,5 @@
+﻿@model string
+@using DependentBundles.Core
+<input type="text" disabled value="@Model" />
+@Html.RegisterBundleDependency("~/bundles/dependency")
+

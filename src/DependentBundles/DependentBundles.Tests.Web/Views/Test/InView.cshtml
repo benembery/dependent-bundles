@@ -1,0 +1,9 @@
+﻿@using DependentBundles.Core
+
+@{
+    ViewBag.Title = "InView";
+}
+<h1>In View Tests</h1>
+@Html.Partial("_BackToTests")
+@Html.RegisterBundleDependency("~/bundles/dependency")
+
