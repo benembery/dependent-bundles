@@ -10,4 +10,17 @@ Within a view, partial view, editor or display template you can use the followin
     
 Then in your layout file you call the following method.
 
-    @Html.RenderDependentScripts()
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dependent Bundles Demo Layout</title>
+    </head>
+    <body>
+        <div class="container body-content">
+        @RenderBody()
+        </div>
+        @Html.RenderDependentScripts()
+    </body>
+</html>
+```
